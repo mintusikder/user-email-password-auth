@@ -18,6 +18,8 @@ const Header = () => {
           <NavLink  className="ml-4" to="/hero">Hero Register</NavLink>
           <NavLink  className="ml-4" to="/login">Login</NavLink>
           <NavLink  className="ml-4" to="/register">Register</NavLink>
+          <NavLink  className="ml-4" to="/login2">Login2</NavLink>
+          <NavLink  className="ml-4" to="/register2">Register2</NavLink>
         </ul>
       </div>
     </div>

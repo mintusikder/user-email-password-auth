@@ -12,6 +12,8 @@ import HeroRegister from './assets/component/HeroRegister.jsx';
 import Home from './assets/component/Home.jsx';
 import Login from './assets/component/Login.jsx';
 import Register from './assets/component/Register.jsx';
+import Login2 from './assets/component/Login2.jsx';
+import Register2 from './assets/component/Register2.jsx';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>
+      },
+      {
+        path: "/login2",
+        element: <Login2></Login2>
+      },
+      {
+        path: "/register2",
+        element: <Register2></Register2>
       },
     ]
   },
