@@ -16,6 +16,7 @@ const HeroRegister = () => {
     })
     .catch((error) => {
       console.log(error);
+
     });
 };
 

@@ -12,7 +12,8 @@ const Register = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
+    const accepted =  e.target.terms.checked
+    console.log(email, password,accepted);
 
     if (password.length < 6) {
       setError("Password should be at least 6 characters");
@@ -20,6 +21,10 @@ const Register = () => {
     } else if (!/[A-Z]/.test(password)) {
       setError("Please Set Upper case");
       return;
+    }
+    else if(!accepted){
+      setError("Please Accept")
+      return
     }
 
     setError("");
@@ -33,6 +38,7 @@ const Register = () => {
       .catch((error) => {
         console.log(error);
         setError(error.message);
+        
       });
   };
 
