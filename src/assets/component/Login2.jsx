@@ -2,11 +2,14 @@
 
 const Login2 = () => {
     return (
-        <div>
-            <form>
-                <input type="email" name="" id="" />
-                <input type="password" name="" id="" />
+        <div className="bg-gray-400 p-12 mx-auto w-1/2">
+           <div>
+           <form>
+                <input placeholder="Email Adress" type="email" name="" id="" required /> <br /><br />
+                <input placeholder="Password" type="password" name="" id="" /> <br /> <br />
+                <input type="button" value="Login" />
             </form>
+           </div>
         </div>
     );
 };
